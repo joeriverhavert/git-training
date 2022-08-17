@@ -1,0 +1,6 @@
+---
+roles: 
+  - src: bertvv.bind
+  
+collections:
+  - name: community.general

@@ -1,0 +1,29 @@
+---
+# bind
+bind_allow_query: ['localhost','192.168.0.0/24']
+bind_allow_recursion: ['localhost','192.168.0.0/24']
+bind_recursion: true
+bind_forwarders: ['8.8.8.8','8.8.4.4']
+bind_listen_ipv4: ['192.168.0.2','192.168.0.3']
+bind_query_log: bind.log
+bind_zones:
+  - name: internal.git-training.be
+    primaries: 192.168.0.2
+    nameservers:
+      - ns1.internal.git-training.be
+    hosts:
+      - name: ns1
+        ip: 192.168.0.2  
+      - name: ns2
+        ip: 192.168.0.3
+      - name: node1
+        ip: 192.168.0.4
+      - name: node2
+        ip: 192.168.0.5
+      - name: node3
+        ip: 192.168.0.5
+    networks:
+      - '192.168.0'
+    forwarders:
+      - 8.8.8.8
+      - 8.8.4.4

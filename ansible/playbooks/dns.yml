@@ -1,0 +1,5 @@
+---
+- name: Playbook for nameserver configuration (bind)
+  hosts: nameservers
+  roles:
+    - ../roles/bertvv.bind

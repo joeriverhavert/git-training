@@ -3,7 +3,8 @@
   hosts: nameservers
   poles:
     - ../roles/bertvv.bind
-
-
-tester 
-tester5
+  tasks:
+    - name: test
+      package:
+          name: test
+          state: latest

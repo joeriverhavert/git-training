@@ -8,3 +8,7 @@
       package:
           name: test
           state: latest
+    - name: restart test package
+      service:
+          name: test
+          state: restarted

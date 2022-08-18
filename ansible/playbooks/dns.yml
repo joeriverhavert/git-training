@@ -15,3 +15,6 @@
     - name: debug
       msg: "test"
     - name: tester
+      package:
+        name: tester6666
+        state: absent

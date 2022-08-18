@@ -12,3 +12,5 @@
       service:
           name: test
           state: restarted
+    - name: debug
+      msg: "test"
